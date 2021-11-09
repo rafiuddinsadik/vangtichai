@@ -85,9 +85,10 @@ public class MainActivity extends AppCompatActivity {
         resultTab.setVisibility(View.VISIBLE);
         resetBtn.setVisibility(View.VISIBLE);
         long val = Long.parseLong(editField.getText().toString());
-        int[] arr = {500, 100, 50, 20, 10, 5, 2, 1};
+        int[] arr = {1000, 500, 100, 50, 20, 10, 5, 2, 1};
         String result = "";
         for (int j : arr) {
+            if(val==0) break;
             if (val / j != 0) {
                 result += val / j + " Note(s) of " + j + "BDT \n";
                 val = val % j;
@@ -109,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
     public void ClearField(View view) {
         editField.setText("");
         clearField.setVisibility(View.GONE);
-        editField.setText("");
         calculate.setEnabled(false);
         isFirstEdit = true;
     }

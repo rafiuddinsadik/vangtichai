@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="numeric_button_height_potrait">30pt</dimen>
+    <dimen name="numeric_button_width_potrait">30pt</dimen>
+</resources>
